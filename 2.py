@@ -1,6 +1,4 @@
-import functools
 import io
-import itertools
 import math
 
 ex = io.StringIO("""Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
@@ -11,6 +9,7 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green""")
 
 def p1():
     with open("inputs/2") as f:
+        #lines = ex.read().splitlines()
         lines = f.read().splitlines()
 
     colors = {'r': 12, 'g': 13, 'b': 14}
@@ -33,6 +32,7 @@ def p1():
 
 def p2():
     with open("inputs/2") as f:
+        #lines = ex.read().splitlines()
         lines = f.read().splitlines()
 
     minColorPowerSum = 0
